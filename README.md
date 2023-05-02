@@ -3,4 +3,4 @@
 
 Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
 
-<a href="/Meus%20Desafios/d010/d010/android.html"> Executar o desafio 010</a>
+<a href="joaoriquelme.github.io./html-css/Meus Desafios/d010/d010/android.html"> Executar o desafio 010</a>
