@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --Bebas: 'Bebas Neue', 'cursive';
+    --Roboto: 'Roboto', 'sans-serif';
+    --Alkatra: 'Alkatra', 'cursive';
+
+    --cor1degrade: #45C4B0;
+    --cor2degrade: #9AEBA3;
+    --cor3degrade: #DAFDBA;
+    --preto: black;
+    --branco: white;
+    --cordomain: rgba(255, 255, 255, 0.425);
+    --corbotaoinicio: #49C6AF;
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--cor1degrade), var(--cor2degrade), var(--cor3degrade));
+    background-attachment: fixed;
+    text-align: center;
+}
+
+ body .imgsnormais {
+    width: 20%;
+}
+
+body .fotoslabum {
+    width: 30%;
+}
+
+body p, li, dt, dd, a {
+    font-family: var(--Roboto);
+}
+
+header {
+    min-height: 280px;
+    background-color: var(--preto);
+    color: var(--branco);
+    margin: -21px -8px 0px -8px;
+    padding-top: 30px
+}
+
+header > h1 {
+    font-family: var(--Bebas);
+    color: var(--branco);
+    font-size: 4em;
+    padding-top: 48px;
+}
+
+nav {
+    text-align: left;
+    background-color: black;
+    margin: 0px -8px 0px -8px;
+    padding-bottom: 11px;
+    padding-left: 8px;
+}
+
+nav > a {
+    font-family: var(--Bebas);
+    font-size: 2em;
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--branco);
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+
+nav > a:hover {
+    background-color: var(--branco);
+    color: var(--preto);
+    margin: 0px 5px 0px 5px;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.425);
+    max-width: 1050px;
+    min-width: 280px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+}
+
+main > h1, h2, h3 {
+    font-family: var(--Alkatra);
+}
+
+main > h1 {
+    font-size: 3em;
+}
+
+ul, ol {
+    list-style-position: inside;
+}
+
+li {
+    font-size: 1.2em;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.video {
+    width: 560px;
+    height: 315px;
+}
+
+.l1, .l2, .l3 {
+    width: 200px;
+    height: 200px; 
+    background-color: black;
+    color: white;
+    font-size: 3em;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+
+.l1:hover, .l2:hover, .l3:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.l1, .l2, .l3 > p {
+    padding-top: 20px;
+}
+
+.l1 {
+    display: inline-block
+}
+
+.l2 {
+    display: inline-block
+}
+
+.l3 {
+    display: inline-block
+}
+
+.textdivs {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+#hover2 {
+    width: 200px;
+    height: 200px;
+    font-weight: bolder;
+    font-size: 2em;
+    background-color: black;
+    color: black;
+    border-radius: 10px;
+    margin-left: 430px;
+}
+
+#hover2 > p {
+    padding-top: 40px;
+    font-size: 1.5em;
+}
+
+#hover2:hover {
+    color: white;
+}
+
+.linksafter {
+    font-family: var(--Bebas);
+    font-size: 2em;
+    display: block;
+    line-height: 41px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    width: 360px;
+    margin-bottom: 10px;
+    margin-left: 343px;
+}
+
+.linksafter::before {
+    content: '➡';
+    color: white;
+    margin-right: 10px;
+    transition-duration: 0.5s;
+}
+
+.linksafter::after {
+    content: '⬅';
+    color: white;
+    margin-left: 10px;
+    transition-duration: 0.5s;
+}
+
+.linksafter:hover::before {
+    color: red;
+}
+
+.linksafter:hover::after {
+    color: red;
+}
+
+#botaoinicio {
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 249px;
+    margin-top: 52px;
+    margin-left: 402px;
+    transition-duration: 1s;
+}
+
+#botaoinicio:hover {
+    color: white;
+    background-color: black;
+}
+
+footer {
+    background-color: var(--preto);
+    color: var(--branco);
+    height: 100px;
+    margin: 80px -8px -8px -8px;
+    padding-top: 29px;
+}
+
+footer > p > a {
+    color: red;
+    transition-duration: 1s;
+    font-family: var(--Alkatra);
+    margin-left: 5px;
+}
+
+footer > p > a:hover {
+    color: yellow;
+}
+
+#copyright {
+    font-weight: bolder;
+    font-size: 0.9em;
+}
