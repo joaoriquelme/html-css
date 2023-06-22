@@ -43,7 +43,7 @@ header {
     background-color: var(--preto);
     color: var(--branco);
     margin: -21px -8px 0px -8px;
-    padding-top: 30px
+    padding-top: 30px;
 }
 
 header > h1 {
@@ -211,6 +211,190 @@ a {
 .linksafter:hover::after {
     color: red;
 }
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 500px;
+    border-collapse: collapse;
+    margin: auto;
+    cursor: pointer;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(39, 38, 38);
+    border: 1px solid black;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+caption:hover {
+    background-color: white;
+    color: black;
+    transition-duration: 0.5s;
+}
+
+thead {
+    background-color: rgb(39, 38, 38);
+    color: white;
+}
+
+thead th:hover {
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    transition-duration: 0.5s;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th#pop {
+    width: 50px;
+}
+
+td {
+    text-align: left;
+}
+
+#SP:hover {
+    background-image: url(../bandeiras/SP.png);
+    background-size: cover;
+    background-position: center top;
+    color: white;
+    padding-left: 55px;
+    transition-duration: 0.5s;
+    font-weight: bolder;
+    text-shadow: 1px 1px 3px black;
+}
+
+#MG:hover {
+    background-image: url(../bandeiras/MG.png);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    padding-left: 55px;
+    transition-duration: 0.5s;
+    font-weight: bolder;
+    text-shadow: 1px 1px 4px black;
+}
+
+#RJ:hover {
+    background-image: url(../bandeiras/RJ.png);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    padding-left: 55px;
+    transition-duration: 0.5s;
+    font-weight: bolder;
+    text-shadow: 1px 1px 3px black;
+}
+
+#BA:hover {
+    background-image: url(../bandeiras/BA.png);
+    background-size: cover;
+    background-position: left center;
+    color: white;
+    padding-left: 55px;
+    transition-duration: 0.5s;
+    font-weight: bolder;
+    text-shadow: 1px 1px 3px black;
+}
+
+#PR:hover {
+    background-image: url(../bandeiras/PR.png);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    padding-left: 55px;
+    transition-duration: 0.5s;
+    font-weight: bolder;
+    text-shadow: 1px 1px 3px black;
+}
+
+#RS:hover {
+    background-image: url(../bandeiras/RS.png);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    padding-left: 55px;
+    transition-duration: 0.5s;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px black;
+}
+
+#PE:hover {
+    background-image: url(../bandeiras/PE.png);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    padding-left: 55px;
+    transition-duration: 0.5s;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px black;
+}
+
+#CE:hover {
+    background-image: url(../bandeiras/CE.png);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    padding-left: 55px;
+    transition-duration: 0.5s;
+    font-weight: bolder;
+    text-shadow: 1px 1px 3px black;
+}
+
+#PA:hover {
+    background-image: url(../bandeiras/PA.png);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    padding-left: 55px;
+    transition-duration: 0.5s;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px black;
+}
+
+#SC:hover {
+    background-image: url(../bandeiras/SC.png);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    padding-left: 55px;
+    transition-duration: 0.5s;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px black;
+}
+
+td.num {
+    text-align: center;
+}
+
+td.num:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 0.5s;
+    font-weight: bolder;
+}
+
+tfoot {
+    background-color: rgb(39, 38, 38);
+    color: white;
+}
+
+.footcor:hover {
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    transition-duration: 0.5s;
+}
+
 
 #botaoinicio {
     color: black;
