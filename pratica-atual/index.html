@@ -185,6 +185,8 @@
             </tfoot>
         </table>
 
+        <h1>Formulários</h1>
+
         <form action="cadastro.php" method="post" autocomplete="on">
             <fieldset>
                 <legend>Dados Pessoais</legend>
@@ -197,8 +199,8 @@
                     <input type="email" name="email" id="iemail" required placeholder="seuemail@dominio.com">
                 </p>
                 <p>
-                    <label for="itel">Telefone: </label>
-                    <input type="tel" name="tel" id="itel" autocomplete="tel" required placeholder="(00) 00000-0000">
+                    <label for="itel" id="labeltel">Telefone: </label>
+                    <input type="tel" name="tel" id="itel" size="10" autocomplete="tel" required placeholder="(00) 00000-0000">
                 </p>
             </fieldset>
 
@@ -206,11 +208,11 @@
                 <legend>Tela de Login</legend>
                 <p>
                     <label for="iuser">Usuário: </label>
-                    <input type="text" name="user" id="iuser" required placeholder="nome do usuário" minlength="5" maxlength="15" size="10" autocomplete="username">
+                    <input type="text" name="user" id="iuser" required placeholder="nome de usuário" minlength="5" maxlength="15" size="10" autocomplete="username">
                 </p>
                 <p>
-                    <label for="isen">Senha: </label>
-                    <input type="password" name="sen" id="isen" required placeholder="minímo 8 letras" size="9" minlength="8" maxlength="20" autocomplete="current-password">
+                    <label for="isen" id="labelsenha">Senha: </label>
+                    <input type="password" name="sen" id="isen" required placeholder="minímo 8 letras" size="10" minlength="8" maxlength="20" autocomplete="current-password">
                 </p>
             </fieldset>
 
@@ -225,9 +227,9 @@
 
             <fieldset>
                 <legend>Esportes Favoritos</legend>
-                <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label><br>
-                <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label><br>
-                <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label><br>
+                <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label>
+                <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label>
+                <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label>
                 <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label>
             </fieldset>
 
@@ -239,17 +241,17 @@
                 </p>
 
                 <p>
-                    <label for="inivel">Nível de Satisfação com o Site: </label>
+                    <label for="inivel" id="labelsatisf">Nível de Satisfação com o Site: </label>
                     <input type="range" name="nivel" id="inivel" min="1" max="5">
                 </p>
 
                 <p>
-                    <label for="ifoto">Foto do Perfil Favorita: </label>
+                    <label for="ifoto" id="labelfoto">Foto do Perfil Favorita: </label>
                     <input type="file" name="foto" id="ifoto">
                 </p>
 
                 <p>
-                    <label for="iest">Estado onde mora: </label>
+                    <label for="iest" id="labelestado">Estado onde mora: </label>
                     <select name="est" id="iest">
         
                         <option value="" selected>--- Escolha ---</option>
@@ -268,7 +270,7 @@
                 </p>
 
                 <p>
-                    <label for="iprof">Profissão Atual: </label>
+                    <label for="iprof" id="labelprof">Profissão Atual: </label>
                     <input type="text" name="prof" id="iprof" list="lstprof">
                     <datalist id="lstprof">
                         <option>Administrador</option>
