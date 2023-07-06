@@ -185,6 +185,109 @@
             </tfoot>
         </table>
 
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="inome">Nome: </label>
+                    <input type="text" name="Nome" id="inome" required placeholder="Nome e Sobrenome">
+                </p>
+                <p>
+                    <label for="iemail">Email: </label>
+                    <input type="email" name="email" id="iemail" required placeholder="seuemail@dominio.com">
+                </p>
+                <p>
+                    <label for="itel">Telefone: </label>
+                    <input type="tel" name="tel" id="itel" autocomplete="tel" required placeholder="(00) 00000-0000">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tela de Login</legend>
+                <p>
+                    <label for="iuser">Usuário: </label>
+                    <input type="text" name="user" id="iuser" required placeholder="nome do usuário" minlength="5" maxlength="15" size="10" autocomplete="username">
+                </p>
+                <p>
+                    <label for="isen">Senha: </label>
+                    <input type="password" name="sen" id="isen" required placeholder="minímo 8 letras" size="9" minlength="8" maxlength="20" autocomplete="current-password">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sexo:</legend>
+                <label for="imasc">Masculino</label>
+                <input type="radio" name="sexo" id="imasc" checked><br>
+
+                <label for="ifem">Feminino</label>
+                <input type="radio" name="sexo" id="ifem">
+            </fieldset>
+
+            <fieldset>
+                <legend>Esportes Favoritos</legend>
+                <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label><br>
+                <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label><br>
+                <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label><br>
+                <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pesquisa (Opcional)</legend>
+                <p>
+                    <label for="icor">Cor Favorita: </label>
+                    <input type="color" name="cor" id="icor" value="red">
+                </p>
+
+                <p>
+                    <label for="inivel">Nível de Satisfação com o Site: </label>
+                    <input type="range" name="nivel" id="inivel" min="1" max="5">
+                </p>
+
+                <p>
+                    <label for="ifoto">Foto do Perfil Favorita: </label>
+                    <input type="file" name="foto" id="ifoto">
+                </p>
+
+                <p>
+                    <label for="iest">Estado onde mora: </label>
+                    <select name="est" id="iest">
+        
+                        <option value="" selected>--- Escolha ---</option>
+                        <optgroup label="Região Sudeste">
+                            <option value="MG">Minas Gerais</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                        </optgroup>
+        
+                        <optgroup label="Região Nordeste">
+                            <option value="MA">Maranhão</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="iprof">Profissão Atual: </label>
+                    <input type="text" name="prof" id="iprof" list="lstprof">
+                    <datalist id="lstprof">
+                        <option>Administrador</option>
+                        <option>Contabilista</option>
+                        <option>Desenvolvedor</option>
+                        <option>Professor</option>
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="imsg">Mensagem: </label><br>
+                    <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem aqui..."></textarea>
+                </p>
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+
         <a href="#inicio"><h1 id="botaoinicio">Voltar ao Início</h1></a>
     </main>
     <footer>
